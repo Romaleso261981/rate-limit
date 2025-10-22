@@ -1,0 +1,14 @@
+{
+  "name": "rate-limit-app",
+  "version": "1.0.0",
+  "description": "Rate-limited client-server application",
+  "main": "server/dist/server.js",
+  "scripts": {
+    "start": "./start.sh",
+    "build": "cd client && npm run build",
+    "postinstall": "cd server && npm install --production && cd ../client && npm install --production"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
