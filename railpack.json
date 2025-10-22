@@ -1,0 +1,19 @@
+{
+  "name": "rate-limit-app",
+  "description": "Rate-limited client-server application",
+  "runtime": "node",
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "addons": [
+    {
+      "plan": "redis:cloud"
+    }
+  ],
+  "env": {
+    "NODE_ENV": "production",
+    "PORT": "3001"
+  }
+}
