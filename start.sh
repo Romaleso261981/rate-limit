@@ -7,8 +7,12 @@ echo "🚀 Starting Rate-Limit App..."
 
 # Install dependencies
 echo "📦 Installing dependencies..."
-cd server && npm install --production
-cd ../client && npm install --production
+cd server && npm install
+cd ../client && npm install
+
+# Build server
+echo "🔨 Building server..."
+cd ../server && npm run build
 
 # Build client
 echo "🔨 Building client..."
